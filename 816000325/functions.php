@@ -2,6 +2,7 @@
 
 function initForm(&$nisNum, &$salaries, &$weeklyContributions, &$totalContributions, &$totSalary, &$totWeekly, &$totTotal){
     $nisNum = $_POST['nisNum'];
+//    if(len($nisNum) != 8) return;
     initSalaries($salaries, $totSalary);
     initWeeklyContributions($weeklyContributions, $salaries, $totWeekly);
     initTotalContributions($totalContributions, $salaries, $totTotal);
