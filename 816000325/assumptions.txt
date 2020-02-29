@@ -1,3 +1,0 @@
-1. Assume that NIS Numbers are unique 8-digit numbers.
-2. Assume that an NIS Number MUST be provided in order to submit data.
-3. Assume there is a typo in instruction 3 part 2, where months = weeks.
