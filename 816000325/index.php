@@ -1,3 +1,6 @@
+<?php
+include 'functions.php';
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,19 +16,38 @@
     </head>
     <body class="p-3">
         <form action="index.php" method="post">
+
             <div class="form-group form-inline">
-                <label class="p-3" for="nisNum"><B>NIS Number</B></label>
+                <label for="nisNum" style="font-size:20px; padding-right: 10px"><B>NIS Number</B></label>
                 <input type="number" class="form-control" id="nisNum" name="nisNum" placeholder="Enter Number">
             </div>
 
-            <div class="form-group">
-                <label class="p-3" for="nisNum"><b>Salary</b></label>
+            <div class="form-horizontal">
+                <label for="nisNum" style="font-size:20px"><b>Salary</b></label>
+
                 <div class="row p-3">
-                    <div class="col-xx">
+                    <div class="col-xs-">
                         <label for="week1">Week 1</label>
                         <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="salary 1" name="sal1">
                     </div>
+                    <div class="col-xs-">
+                        <label for="week1">Week 2</label>
+                        <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="salary 2" name="sal2">
+                    </div>
+                    <div class="col-xs-">
+                        <label for="week1">Week 3</label>
+                        <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="salary 3" name="sal3">
+                    </div>
+                    <div class="col-xs-">
+                        <label for="week1">Week 4</label>
+                        <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="salary 4" name="sal4">
+                    </div>
+                    <div class="col-xs-">
+                        <label for="week1">Week 5</label>
+                        <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="salary 5" name="sal5">
+                    </div>
                 </div>
+
             </div>
 
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -33,10 +55,7 @@
 
         <?php
         if(isset($_POST['nisNum'])){
-            $nisNum = $_POST['nisNum'];
-            $sal1 = $_POST['sal1'];
-            echo $nisNum;
-            echo $sal1;
+            initForm();
         }
         else echo "Please fill out form.";
 
