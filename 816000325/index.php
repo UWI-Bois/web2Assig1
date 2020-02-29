@@ -52,14 +52,60 @@ include 'functions.php';
 
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
         <?php
         if(isset($_POST['nisNum'])){
             initForm();
         }
-        else echo "Please fill out form.";
-
-
+        else echo "Please fill out form.<BR><BR><BR>";
         ?>
+
+        <label for="nisNum" style="font-size:20px"><b>Employee NIS Contributions</b></label>
+        <div class="row p-3">
+            <div class="col-xs-">
+                <label for="week1">Week 1</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="econ1 1" name="econ1" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 2</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="econ2 2" name="econ2" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 3</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="econ3 3" name="econ3" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 4</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="econ4 4" name="econ4" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 5</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="econ5 5" name="econ5" readonly>
+            </div>
+        </div>
+        <BR><BR>
+        <label for="nisNum" style="font-size:20px"><b>Total NIS Contributions</b></label>
+        <div class="row p-3">
+            <div class="col-xs-">
+                <label for="week1">Week 1</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="tot1 1" name="tot1" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 2</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="tot1 2" name="tot2" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 3</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="tot1 3" name="tot3" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 4</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="tot1 4" name="tot4" readonly>
+            </div>
+            <div class="col-xs-">
+                <label for="week1">Week 5</label>
+                <input type="number" min="0.00" step="0.01" value="0.00" class="form-control" placeholder="tot1 5" name="tot5" readonly>
+            </div>
+        </div>
+
     </body>
 </html>
